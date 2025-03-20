@@ -2,6 +2,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 body{
     background-color: rgb(14, 164, 164);
     margin: 0px;
@@ -47,6 +48,52 @@ li{
     font-weight: bold;
 }
 
-.especial {
-    color: yellow;
+.especial, body > form > span{
+    color: blue;
 }
+
+.especial{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/*
+body > form > span{
+    color: yellow;
+} */
+
+body span{
+    border: 1px solid white;
+}
+
+.contenedor-comentario > .comentario{
+    color: rebeccapurple;
+}
+
+input[type="text"]{
+    width: 200px;
+}
+
+button.especial:hover{
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+h1:hover{
+    color: blue;
+}
+
+#segundo{
+    background-color: orange;
+}
+
+.primero{
+    background-color: green;
+}
+
+
+
+/* clase le gana al nombre del elemento */
+/* id le gana a la clase */
+/* # > . > elemento
