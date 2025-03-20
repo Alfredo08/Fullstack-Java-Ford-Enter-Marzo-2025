@@ -1,0 +1,52 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(14, 164, 164);
+    margin: 0px;
+    border: 10px solid blue;
+    padding: 20px;
+}
+
+h2{
+    color: white;
+    /*
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    */
+    border: 2px solid black;
+
+    text-align: center;
+    padding: 15px;
+}
+
+h1{
+    color: green;
+}
+
+p{
+    font-size: 20px;
+}
+
+.chetos{
+    width: 300px;
+}
+
+#lenguajes{
+    font-style: italic;
+}
+
+li{
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.lenguaje{
+    font-weight: bold;
+}
+
+.especial {
+    color: yellow;
+}
