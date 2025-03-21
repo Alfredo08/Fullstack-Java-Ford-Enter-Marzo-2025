@@ -1,0 +1,47 @@
+
+div{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.navegacion{
+    /* height: 300px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* align-items: flex-end; */
+    /* flex-wrap: wrap; */
+    gap: 15px;
+}
+/*
+.item-nav{
+    align-self: flex-start;
+}
+
+.especial{
+    align-self: center;
+}
+*/
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+
+.menu{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contenido{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-contenido{
+    flex: 1;
+}
