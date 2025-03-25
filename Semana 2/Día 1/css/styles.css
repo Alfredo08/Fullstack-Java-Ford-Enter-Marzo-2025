@@ -1,0 +1,88 @@
+/* Estilos para móviles y pantallas en delante */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.logo-image{
+    width: 40%;
+}
+
+.logo{
+    text-align: center;
+}
+
+.menu{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    background-color: rgb(118, 118, 118);
+    padding-right: 8px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+}
+
+.product{
+    border: 1px solid rgb(195, 194, 194);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilos para tabletas y pantallas en delante */
+@media screen and (min-width: 768px){
+    header{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social{
+        justify-content: space-around;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 992px){
+    .menu{
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    main{
+        flex-direction: row;
+    }
+
+    .product{
+        flex: 1;
+    }
+}
