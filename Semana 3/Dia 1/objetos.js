@@ -16,7 +16,7 @@ let listaLibros = [{
     capitulos: 14 ,
     autores: ["Alex Miller", "Roger Anderson"],
     editorial: "Skillnest"
-}]
+}];
 
 for(let i = 0; i < listaLibros.length; i ++){
     console.log(listaLibros[i].titulo);
