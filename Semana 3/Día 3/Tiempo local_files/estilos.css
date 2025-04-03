@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(116, 116, 251);
+    color: white;
+}
+
+.ciudades{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.temperatura{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pronostico-semana{
+    display: flex;
+    gap: 20px;
+}
+
+.dia{
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 5px;
+    background-color: rgb(241, 240, 240);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.temperaturas{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.imagen-clima {
+    width: 70%;
+}
+
+.dia-semana{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.cookie-aceptar{
+    background-color: rgb(255, 255, 118);
+}

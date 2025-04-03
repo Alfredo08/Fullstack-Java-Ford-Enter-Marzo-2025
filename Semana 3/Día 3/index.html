@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/estilos.css">
+        <title> Tiempo local </title>
+    </head>
+    <body>
+        <nav>
+            <h1> Tiempo local </h1>
+            <ul class="ciudades">
+                <li class="ciudad">Buenos Aires</li>
+                <li class="ciudad">Ciudad de México</li>
+                <li class="ciudad">Santiago</li>
+                <li class="ciudad">Sao Paulo</li>
+                <li class="ciudad">Quito</li>
+            </ul>
+            <div class="temperatura">
+                <p> Mostrar temperatura en </p>
+                <select>
+                    <option> ºC </option>
+                    <option> ºF </option>
+                </select>
+            </div>
+        </nav>
+        <main>
+            <h2 class="titulo-ciudad"> Buenos Aires </h2>
+            <div class="pronostico-semana">
+                <div class="dia">
+                    <img class="imagen-clima" src="./imagenes/nublado.png" alt="Nublado">
+                    <p class="dia-semana"> Hoy </p>
+                    <p class="clima"> Nublado </p>
+                    <div class="temperaturas">
+                        <p class="max"> 22º C </p>
+                        <p class="min"> 15º C </p>
+                    </div>
+                </div>
+                <div class="dia">
+                    <img class="imagen-clima" src="./imagenes/lluvioso.png" alt="Lluvioso">
+                    <p class="dia-semana"> Mañana </p>
+                    <p class="clima"> Lluvioso </p>
+                    <div class="temperaturas">
+                        <p class="max"> 20º C </p>
+                        <p class="min"> 13º C </p>
+                    </div>
+                </div>
+                <div class="dia">
+                    <img class="imagen-clima" src="./imagenes/tormenta.png" alt="Tormenta">
+                    <p class="dia-semana"> Miércoles </p>
+                    <p class="clima"> Tormentas </p>
+                    <div class="temperaturas">
+                        <p class="max"> 28º C </p>
+                        <p class="min"> 11º C </p>
+                    </div>
+                </div>
+                <div class="dia">
+                    <img class="imagen-clima" src="./imagenes/nublado.png" alt="Parcialmente nublado">
+                    <p class="dia-semana"> Jueves </p>
+                    <p class="clima"> Parcialmente nublado </p>
+                    <div class="temperaturas">
+                        <p class="max"> 21º C </p>
+                        <p class="min"> 14º C </p>
+                    </div>
+                </div>
+                <div class="dia">
+                    <img class="imagen-clima" src="./imagenes/Soleado.png" alt="Soleado">
+                    <p class="dia-semana"> Viernes </p>
+                    <p class="clima"> Soleado </p>
+                    <div class="temperaturas">
+                        <p class="max"> 24º C </p>
+                        <p class="min"> 17º C </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="cookies">
+                Detente! Tiempo de cookies. Usamos cookies (tristemente, no las comestibles)
+                para personalizar contenido y anuncios, proporcionar funciones de redes
+                sociales y analizar nuestro tráfico.
+            </p>
+            <a href="#"> Lee mas... </a>
+            <button class="cookie-aceptar" onclick="aceptarCookies(this)">
+                Acepto
+            </button>
+        </footer>
+        
+        <script src="./js/index.js"></script>
+    </body>
+</html>
