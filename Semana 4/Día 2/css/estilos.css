@@ -1,0 +1,24 @@
+main{
+    display: flex;
+    gap: 50px;
+}
+
+.lista, .detalle{
+    flex: 1;
+}
+
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.nombre-pokemon{
+    width: 25%;
+}
+
+.detalle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
