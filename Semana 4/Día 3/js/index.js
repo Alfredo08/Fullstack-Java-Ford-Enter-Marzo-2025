@@ -27,7 +27,7 @@ for(let i = 0; i < botonesEliminar.length; i ++){
 
 }
 
-let activo = false;
+
 
 function mostrarModal(elemento){
     let modal = document.querySelector('.modal');
@@ -60,8 +60,8 @@ function actualizarPerfil(evento){
 function cerrarModal(elemento){
     let modal = document.querySelector('.modal');
     let main = document.querySelector('main');
-
-    if(activo){
+    console.log(modal.classList);
+    if(! modal.classList.contains("ocultar")){
         main.classList.remove('opacar');
         modal.classList.add('ocultar');  
     }
