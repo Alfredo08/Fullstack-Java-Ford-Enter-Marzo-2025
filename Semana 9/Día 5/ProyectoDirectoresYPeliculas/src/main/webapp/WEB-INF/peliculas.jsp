@@ -1,0 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Películas y directores </title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link href="/css/estilos.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row mt-5">
+				<h1 class="col-8"> Lista de películas </h1>
+				<form class="col-4" action="/cerrar/sesion" method="POST">
+					<button class="btn btn-secondary">
+						Cerrar sesión
+					</button>
+				</form>
+			</div>
+			<div class="row">
+				<h2>
+					Bienvenido de vuelta ${nombre} ${apellidos}
+				</h2>
+			</div>
+			<div class="row">
+				<c:forEach items="${listaDePeliculas}" var="pelicula">
+					<div class="col-3 tarjeta-pelicula">
+						<h3> ${pelicula.titulo} </h3>
+						<img class="imagen-pelicula" src="${pelicula.imagen}" alt="${pelicula.titulo}" >
+						<p> Año: ${pelicula.anio} </p>
+					
+						<div class="row">
+							<form class="col-6" action="/detalle/pelicula/${pelicula.id}" method="GET">
+								<button class="btn btn-secondary">
+									Detalle
+								</button>
+							</form>
+							<c:if test="${id_director == pelicula.director.id}">
+								<form class="col-6" action="/formulario/editar/pelicula/${pelicula.id}" method="GET">
+									<button class="btn btn-info">
+										Editar
+									</button>
+								</form>
+							</c:if>
+						</div>
+					</div>
+				</c:forEach>
+			</div>
+			<div class="row">
+				<form class="col-2" action="/formulario/pelicula" method="GET">
+					<button class="btn btn-success">
+						Agregar película
+					</button>
+				</form>
+			</div>
+		</div>
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	</body>
+</html>
