@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.contenedor-jugos{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.jugo{
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	background-color: #C1C7C3;
+	gap: 20px;
+	align-items: center;
+	padding: 10px;
+}
+
+.imagen-jugo{
+	width: 70%;
+}
