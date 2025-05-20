@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.contenedor-jugos{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.jugo{
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	background-color: #C1C7C3;
+	gap: 20px;
+	align-items: center;
+	padding: 10px;
+}
+
+.imagen-jugo{
+	width: 70%;
+}
+
+.detalle-jugo{
+	display: flex;
+	gap: 10px;
+	border: 1px solid #C1C7C3;
+	padding: 20px;
+}
+
+.detalle{
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.imagen{
+	flex: 1;	
+}
+
+.imagen > img{
+	width: 90%;
+}
+
+.detalle-titulo{
+	color: #C1C7C3;
+	font-weight: bold;
+}
